@@ -1,0 +1,56 @@
+/* Styling for the BookAppointment component */
+.book-appointment-section {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 60px 0;
+}
+
+.appointment-heading {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.booking-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.booking-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.booking-card .card-body {
+    padding: 20px;
+}
+
+.booking-card .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.booking-card .card-text {
+    color: #6c757d;
+}
+
+.booking-card .btn {
+    background-color: #00c4cc;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-card .btn:hover {
+    background-color: #00b2b9;
+}

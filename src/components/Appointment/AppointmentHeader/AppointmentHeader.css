@@ -1,0 +1,32 @@
+.appointment-header {
+    height: 600px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 40px 0;
+  }
+  
+  .header-title {
+    color: #3a4256;
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px;
+  }
+  
+  .calendar {
+    margin-top: 20px; /* Space between the title and calendar */
+    border: 1px solid #ddd; /* Light border for the calendar */
+    border-radius: 8px; /* Rounded corners for the calendar */
+    padding: 10px; /* Padding inside the calendar */
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto; /* Ensure the image scales properly */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-md-left {
+    text-align: left;
+  }
+  

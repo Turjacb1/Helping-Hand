@@ -1,0 +1,48 @@
+/* Styling for the FeaturedService component */
+.featured-service-section {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 60px 0;
+    border-radius: 8px;
+    margin: 50px 0;
+  }
+  
+  .featured-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3a4256;
+    line-height: 1.4;
+  }
+  
+  .featured-description {
+    font-size: 16px;
+    color: #6c757d;
+  }
+  
+  .featured-service-section .btn {
+    background-color: #00c4cc;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .featured-service-section .btn:hover {
+    background-color: #00b2b9;
+  }
+  
+  .featured-service-section img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .featured-title {
+      font-size: 28px;
+    }
+  
+    .featured-description {
+      font-size: 14px;
+    }
+  }
+  

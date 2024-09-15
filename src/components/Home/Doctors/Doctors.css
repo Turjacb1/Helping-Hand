@@ -1,0 +1,35 @@
+.doctors-section {
+  background-color: white; /* Light background for the section */
+  padding: 60px 0;
+}
+
+.section-header h5 {
+  color: #007bff; /* Primary color */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333; /* Dark text for contrast */
+}
+
+.doctor-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure image fits within the circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h5 {
+  font-size: 18px;
+  color: #333; /* Dark text color */
+  font-weight: 600;
+}
+
+p.text-secondary {
+  color: #6c757d; /* Secondary text color */
+  font-size: 16px;
+}

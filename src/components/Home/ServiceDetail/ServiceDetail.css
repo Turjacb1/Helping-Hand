@@ -1,0 +1,21 @@
+.service-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-image {
+    width: 100px;
+    height: 100px;
+}
+
+.service-name {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}

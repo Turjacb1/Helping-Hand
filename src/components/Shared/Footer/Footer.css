@@ -1,0 +1,60 @@
+.footer {
+  background-color: #a37540; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  padding: 40px 0;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f8f9fa; /* Light color for headers */
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust size of social icons */
+  color: #f8f9fa;
+}
+
+.social-icon:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #f8f9fa; /* Light color for footer text */
+}

@@ -1,0 +1,55 @@
+/* Custom CSS for HeaderMain */
+.header-main {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .main-title {
+    color: #3a4256;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .main-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .main-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .chair-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 2.5rem;
+    }
+  
+    .main-description {
+      font-size: 1rem;
+    }
+  
+    .header-main {
+      text-align: center;
+    }
+  
+    .col-md-6 {
+      margin-top: 2rem;
+    }
+  }
+  

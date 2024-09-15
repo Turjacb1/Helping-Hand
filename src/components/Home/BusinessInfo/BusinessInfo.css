@@ -1,0 +1,26 @@
+/* Custom CSS for BusinessInfo component */
+.business-info-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1140px;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .business-info-section {
+      padding: 2rem 0;
+    }
+  }
+  

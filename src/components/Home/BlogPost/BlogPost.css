@@ -1,0 +1,59 @@
+/* BlogPost.css */
+
+.testimonials {
+  background-color: #98ae54;
+}
+
+.section-header h5 {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+.section-header h3 {
+  font-size: 2rem;
+  color: #343a40;
+}
+
+.section-header p.lead {
+  font-size: 1.125rem;
+  color: #6c757d;
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.card-img-top {
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-muted {
+  color: #6c757d;
+}

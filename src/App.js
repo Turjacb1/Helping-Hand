@@ -117,6 +117,9 @@ import BlogPost from './components/Home/BlogPost/BlogPost';
 import Review from './components/Home/Review/Review';
 import SearchResults from './components/Shared/SearchResults/SearchResults';
 import Blog from './components/Home/BlogPost/Blog';
+
+
+
  // Import SearchResults component
 
 // Initialize Firebase
@@ -200,6 +203,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

@@ -20,7 +20,8 @@ const Animation = () => {
         <div className="animation-container">
             {/* Use animated.h1 for the spring-based animation */}
             <animated.h1 style={slideProps} className="welcome-title">
-                Welcome to Helping-Hand
+                Welcome to Helping-Hand.Website is currently under development.<br/>
+                Please stay with us.
             </animated.h1>
         </div>
     );

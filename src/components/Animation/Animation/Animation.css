@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    width: 80vw;
+    height: 20vh;
+    width: 100vw;
     margin: 0 auto;
     background-color: #f0f8ff;
     border-radius: 15px;
@@ -12,7 +12,7 @@
 }
 
 .welcome-title {
-    font-size: 2.5rem; /* Slightly larger for visibility */
+    font-size: 2.0rem; /* Slightly larger for visibility */
     font-weight: bold;
     color: #4CAF50;
     text-align: center;

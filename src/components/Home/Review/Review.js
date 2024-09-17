@@ -88,56 +88,59 @@ const Review = () => {
         </div>
       )}
 
-      <div className="review-form">
-        <h2 className="form-title">Leave a Review</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={newReview.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="title">Title</label>
-            <input
-              type="text"
-              id="title"
-              name="title"
-              value={newReview.title}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="review">Review</label>
-            <textarea
-              id="review"
-              name="review"
-              value={newReview.review}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="rating">Rating</label>
-            <select
-              id="rating"
-              name="rating"
-              value={newReview.rating}
-              onChange={handleChange}
-            >
-              {[1, 2, 3, 4, 5].map(r => (
-                <option key={r} value={r}>{r} Star{r > 1 ? 's' : ''}</option>
-              ))}
-            </select>
-          </div>
-          
-        </form>
-      </div>
+<div className="review-form">
+  <h2 className="form-title">Leave a Review</h2>
+  <form onSubmit={handleSubmit}>
+    <div className="form-group">
+      <label htmlFor="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value={newReview.name}
+        onChange={handleChange}
+        required
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value={newReview.title}
+        onChange={handleChange}
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="review">Review</label>
+      <textarea
+        id="review"
+        name="review"
+        value={newReview.review}
+        onChange={handleChange}
+        required
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="rating">Rating</label>
+      <select
+        id="rating"
+        name="rating"
+        value={newReview.rating}
+        onChange={handleChange}
+      >
+        {[1, 2, 3, 4, 5].map(r => (
+          <option key={r} value={r}>{r} Star{r > 1 ? 's' : ''}</option>
+        ))}
+      </select>
+    </div>
+    <div className="form-group">
+      <button type="submit">Submit Review</button>
+    </div>
+  </form>
+</div>
+
     </div>
   );
 };

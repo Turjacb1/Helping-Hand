@@ -153,11 +153,14 @@
             date: Date,
           });
           
+
           const DoctorSchema = new mongoose.Schema({
             name: String,
             email: String,
             password: String,
+            qualification:String,
             image: String, // Store the image path or URL
+            
             role: { type: String, default: 'doctor' } // Role field, default is 'doctor'
           });
           
@@ -274,6 +277,7 @@
             const file = req.files.file;
             const name = req.body.name;
             const email = req.body.email;
+            const qualification = req.body.qualification;
           
             const uploadPath = `${__dirname}/doctors/${file.name}`;
           
@@ -286,13 +290,15 @@
               const newDoctor = new Doctor({
                 name,
                 email,
-                image: `doctors/${file.name}` // Save the relative path to the image
+                qualification,
+                image: `doctors/${file.name}`, // Save the relative path to the image
+                
               });
           
               try {
                 await newDoctor.save();
                 console.log('Doctor added successfully:', name);
-                res.send({ name: file.name, path: `/${file.name}`, name, email });
+                res.send({ name: file.name, path: `/${file.name}`, name, email,qualification });
               } catch (error) {
                 console.error('Error adding doctor:', error);
                 res.status(500).send({ msg: 'Failed to add doctor' });

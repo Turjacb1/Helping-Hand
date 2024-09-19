@@ -20,9 +20,9 @@ const Home = () => {
             <Services></Services>
             <FeaturedService></FeaturedService>
             <MakeAppoinment></MakeAppoinment>
-            
-            <BlogPost></BlogPost>
             <Doctors></Doctors>
+            <BlogPost></BlogPost>
+            
             
             <br/><br/>
             <Footer></Footer>

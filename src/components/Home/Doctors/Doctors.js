@@ -28,6 +28,7 @@ const Doctors = () => {
               />
               <h5 className="mt-3 mb-1">{doctor.name}</h5>
               <p className="text-secondary">{doctor.email}</p>
+              <p className="text-secondary">{doctor.qualification}</p>
             </div>
           ))}
         </div>

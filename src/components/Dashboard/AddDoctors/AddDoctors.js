@@ -23,6 +23,7 @@ const AddDoctors = () => {
     formData.append('file', file);
     formData.append('name', info.name);
     formData.append('email', info.email);
+    formData.append('qualification', info.qualification);
 
     fetch('http://localhost:5000/addADoctor', {
       method: 'POST',
@@ -62,6 +63,11 @@ const AddDoctors = () => {
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">Name</label>
               <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Name" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="exampleInputQualification">Qualification</label>
+              <input onBlur={handleBlur} type="qualification" className="form-control" name="qualification" placeholder="Qualification" />
             </div>
 
             <div className="form-group">

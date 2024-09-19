@@ -56,6 +56,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-12 text-center">
             <p>&copy; 2024 Medical Service. All rights reserved.</p>
+            <p>&copy; Developed By Turja Chakraborty</p>
           </div>
         </div>
       </div>

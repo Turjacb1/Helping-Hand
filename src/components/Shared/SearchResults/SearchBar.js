@@ -12,8 +12,19 @@ const SearchBar = ({ onSearch }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSearch(query);
-        navigate(`/search?query=${encodeURIComponent(query)}`); // Redirect to search results
+
+        // Convert query to lowercase for easier matching
+        const lowerCaseQuery = query.toLowerCase();
+
+        // Check if the query matches a specific page and navigate to that route
+        if (['appointment', 'blog', 'contact', 'review','dashboard'].includes(lowerCaseQuery)) {
+            navigate(`/${lowerCaseQuery}`);
+        } else {
+            // If no match, redirect to a generic search page
+            navigate(`/search?query=${encodeURIComponent(query)}`);
+        }
+        
+        onSearch(query);  // Optional callback for handling searches
     };
 
     return (

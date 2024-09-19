@@ -30,7 +30,7 @@ const SearchResults = ({ query }) => {
                 <ul className="results-list">
                     {results.map(result => (
                         <li key={result.id} className="result-item">
-                            <h3>{result.home}</h3>
+                            <h3>{result.title}</h3>
                             <p>{result.description}</p>
                             <a href={result.link} className="result-link">Read more</a>
                         </li>

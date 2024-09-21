@@ -6,10 +6,15 @@ import { useNavigate } from 'react-router-dom';
 import './HeaderMain.css'; // Custom CSS for additional styling
 import { Navigate } from 'react-router-dom';
 
+
+
 const HeaderMain = () => {
   const [currentImage, setCurrentImage] = useState(chair1); // Initial image
   const images = [chair1, chair2]; // Array of images
   const imageChangeInterval = 4000; // 3 seconds
+
+
+
 
   // Effect to handle the automatic image switching
   useEffect(() => {

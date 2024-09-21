@@ -16,14 +16,17 @@ const SearchBar = ({ onSearch }) => {
         // Convert query to lowercase for easier matching
         const lowerCaseQuery = query.toLowerCase();
 
-        // Check if the query matches a specific page and navigate to that route
-        if (['appointment', 'blog', 'contact', 'review','dashboard'].includes(lowerCaseQuery)) {
+        // Add 'dashboard' to the list of matching routes
+        const pages = ['appointment', 'blog', 'contact', 'review', 'dashboard'];
+
+        if (pages.includes(lowerCaseQuery)) {
+            // Navigate to the corresponding route if there's a match
             navigate(`/${lowerCaseQuery}`);
         } else {
             // If no match, redirect to a generic search page
             navigate(`/search?query=${encodeURIComponent(query)}`);
         }
-        
+
         onSearch(query);  // Optional callback for handling searches
     };
 

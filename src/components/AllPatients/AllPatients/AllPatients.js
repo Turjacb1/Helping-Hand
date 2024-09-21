@@ -6,6 +6,8 @@ import Sidebar from '../../Dashboard/Sidebar/Sidebar';
 const AllPatients = () => {
   const [appointments, setAppointments] = useState([]);
 
+
+
   // Fetch all appointments when the component mounts
   useEffect(() => {
     const fetchAllAppointments = async () => {
@@ -16,7 +18,6 @@ const AllPatients = () => {
         console.error('Error fetching appointments:', error);
       }
     };
-
     fetchAllAppointments();
   }, []);
 

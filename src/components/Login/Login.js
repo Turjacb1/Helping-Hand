@@ -275,12 +275,13 @@ import React, { useState, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import { UserContext } from '../../App'; // Assuming you have a UserContext
-import { Container, Form, Button, Alert } from 'react-bootstrap';
+import { UserContext } from '../../App';
+import { Container, Form, Button, Alert, InputGroup } from 'react-bootstrap'; // Import InputGroup for the password field
 import firebaseConfig from './firebase.config';
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import loginImage from '../../images/login.png'; // Assuming this is where your image is stored
-import './Login.css'; // Custom styling
+import loginImage from '../../images/login.png';
+import './Login.css';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Import eye icons
 
 // Initialize Firebase if not already initialized
 if (!firebase.apps.length) {
@@ -296,6 +297,7 @@ const Login = () => {
         success: false,
         message: ''
     });
+    const [passwordVisible, setPasswordVisible] = useState(false); // State for password visibility
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -376,20 +378,13 @@ const Login = () => {
             });
     };
 
-    // Function to handle sending the sign-in link
     const sendSignInLinkToEmail = (e) => {
         e.preventDefault();
         const actionCodeSettings = {
-            url: 'https://www.example.com/finishSignUp?cartId=1234', // Replace with your actual URL
+            url: 'https://www.example.com/finishSignUp?cartId=1234', 
             handleCodeInApp: true,
-            iOS: {
-                bundleId: 'com.example.ios'
-            },
-            android: {
-                packageName: 'com.example.android',
-                installApp: true,
-                minimumVersion: '12'
-            },
+            iOS: { bundleId: 'com.example.ios' },
+            android: { packageName: 'com.example.android', installApp: true, minimumVersion: '12' },
             dynamicLinkDomain: 'example.page.link'
         };
 
@@ -411,7 +406,6 @@ const Login = () => {
             });
     };
 
-    // Function to handle sign-in when the user clicks the email link
     const handleEmailLinkSignIn = () => {
         if (firebase.auth().isSignInWithEmailLink(window.location.href)) {
             let email = window.localStorage.getItem('emailForSignIn');
@@ -434,7 +428,6 @@ const Login = () => {
         }
     };
 
-    // Check for email link on component mount
     React.useEffect(() => {
         handleEmailLinkSignIn();
     }, []);
@@ -456,7 +449,18 @@ const Login = () => {
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" name="password" placeholder="Password" onBlur={handleBlur} required />
+                        <InputGroup>
+                            <Form.Control
+                                type={passwordVisible ? 'text' : 'password'} 
+                                name="password"
+                                placeholder="Password"
+                                onBlur={handleBlur}
+                                required
+                            />
+                            <InputGroup.Text onClick={() => setPasswordVisible(!passwordVisible)}>
+                                {passwordVisible ? <FaEyeSlash /> : <FaEye />}
+                            </InputGroup.Text>
+                        </InputGroup>
                     </Form.Group>
                     <Button variant="success" type="submit" style={{ width: '100%' }}>
                         {newUser ? 'Sign Up' : 'Sign In'}

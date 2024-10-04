@@ -1,7 +1,8 @@
 /* BlogPost.css */
 
 .testimonials {
-  background-color: #98ae54;
+  background-color: rgb(195, 206, 76);
+  padding: 20px; /* Add padding to the testimonials section */
 }
 
 .section-header h5 {
@@ -21,29 +22,42 @@
 
 .card {
   border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin: 10px; /* Space between cards */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
 }
 
 .card-img-top {
   border-radius: 0.5rem 0.5rem 0 0;
-  height: 200px;
+  height: 120px; /* Reduced height for a smaller card */
   object-fit: cover;
 }
 
 .card-body {
   background-color: #ffffff;
+  padding: 15px; /* Add padding for better spacing */
 }
 
 .card-title {
   font-size: 1.25rem;
+  font-weight: bold; /* Make title bold */
+  margin-bottom: 10px; /* Space between title and text */
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller text size */
+  margin-bottom: 15px; /* Space between text and footer */
 }
 
 .card-footer {
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+  padding: 10px; /* Add padding to footer */
 }
 
 .text-primary {

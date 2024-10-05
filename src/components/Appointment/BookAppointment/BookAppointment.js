@@ -52,7 +52,7 @@ const BookAppointment = ({ date }) => {
                 <div className="row">
                     {bookingData.map((booking) => (
                         <div className="col-md-4 mb-4" key={booking.id}>
-                            <BookingCard booking={booking} date={date} />
+                            <BookingCard booking={booking} date={date}/>
                         </div>
                     ))}
                 </div>

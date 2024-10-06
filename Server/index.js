@@ -115,6 +115,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
 
+
+
 // Load environment variables
 const { DB_USER, DB_PASS, DB_HOST, DB_NAME } = process.env;
 
